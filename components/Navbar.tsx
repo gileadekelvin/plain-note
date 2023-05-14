@@ -1,6 +1,5 @@
-import { cn } from '@/lib/utils';
 import Link from 'next/link';
-import { buttonVariants } from './ui/button';
+import { UserButton } from '@clerk/nextjs';
 
 const Navbar = () => {
   return (
@@ -34,12 +33,7 @@ const Navbar = () => {
                 ></path>
               </svg>
             </a>
-            <Link
-              href='/'
-              className={cn(buttonVariants({ variant: 'secondary', size: 'sm' }), 'px-4')}
-            >
-              Login
-            </Link>
+            <UserButton showName />
           </div>
         </div>
       </div>
