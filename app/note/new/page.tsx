@@ -19,7 +19,7 @@ export default function NewNote() {
           }}
           rows={1}
           placeholder={!initialLoading ? 'write a note...' : ''}
-          className='overflow-hidden h-auto resize-none border-none p-0 focus:ring-transparent focus-visible:outline-none focus-visible:ring-transparent dark:border-none dark:focus:ring-transparent dark:focus:ring-offset-transparent dark:focus-visible:outline-none md:min-w-[600px]'
+          className='h-auto resize-none overflow-hidden border-none p-0 text-sm font-medium focus:ring-transparent focus-visible:outline-none focus-visible:ring-transparent dark:border-none dark:focus:ring-transparent dark:focus:ring-offset-transparent dark:focus-visible:outline-none md:min-w-[600px]'
         />
       </div>
     </section>
