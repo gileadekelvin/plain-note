@@ -7,20 +7,18 @@ export const metadata = {
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
-    <>
-      <section className='space-y-6'>
-        <div className='container flex max-w-[64rem] flex-col'>
-          <div className='flex flex-row justify-start gap-2'>
-            <Button size='sm' variant='ghost'>
-              Save Note
-            </Button>
-            <Button size='sm' variant='ghost'>
-              Share
-            </Button>
-          </div>
-          {children}
+    <section className='space-y-6'>
+      <div className='container flex max-w-[64rem] flex-col'>
+        <div className='sticky top-14 z-40 flex flex-row justify-start gap-2 bg-white'>
+          <Button size='sm' variant='ghost'>
+            Save Note
+          </Button>
+          <Button size='sm' variant='ghost'>
+            Share
+          </Button>
         </div>
-      </section>
-    </>
+        {children}
+      </div>
+    </section>
   );
 }
